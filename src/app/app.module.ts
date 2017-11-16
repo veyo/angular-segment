@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
+import { VeyoExampleService } from './veyo-example/veyo-example.service';
 import { AppComponent } from './app.component';
 
 
@@ -15,7 +16,9 @@ import { AppComponent } from './app.component';
     Angulartics2Module.forRoot([Angulartics2Segment]),
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    VeyoExampleService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
